@@ -230,13 +230,7 @@ class DNA(Seq):
                 pass 
         return "Amount of unknowns in the sequence:" + str(self.count)
 
-## allison's method
     def find_orfs(self):
-        """
-        >>> d=DNA("AAATGAAATTTTAAATGTAG","my_dna","species","gene_id")
-        >>> print(d.find_orfs())
-        ['ATGAAATTTTAA', 'ATGTAG']
-        """
         start_codon = "ATG"
         stop_codons = {"TAA", "TAG", "TGA"}
         seq = self.sequence
